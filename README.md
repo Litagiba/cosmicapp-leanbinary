@@ -6,6 +6,4 @@ git clone https://github.com/cosmicjs/cosmicapp-stellar
 cd cosmicapp-stellar
 npm install
 npm start
-
-branches
 ```
