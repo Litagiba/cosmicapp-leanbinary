@@ -7,7 +7,7 @@ app.set('port', (process.env.PORT || 3000))
 app.use('/', express.static(__dirname + '/public/'))
 //app.use('/', express.static(__dirname + '/public/'))
 var Cosmic = require('cosmicjs')
-var bucket_slug = process.env.COSMIC_BUCKET || 'stellar'
+var bucket_slug = process.env.COSMIC_BUCKET || 'leanbinary'
 app.get('/', function(req, res) {
   Cosmic.getObjects({ bucket: { slug: bucket_slug } }, function(err, response) {
     res.locals.cosmic = response;
