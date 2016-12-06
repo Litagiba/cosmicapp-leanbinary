@@ -6,21 +6,20 @@
   "dependencies": {
     "cosmicjs": "^2.1.2",
     "express": "^4.14.0",
-    "hogan-express": "^0.5.2",
-    "webpack": "^1.8.5",
-    "webpack-dev-server": "^1.4.7"
+    "hogan-express": "^0.5.2"
   },
   "devDependencies": {
-    "extract-text-webpack-plugin": "^1.0.1",
+    "browser-sync": "^2.18.2",
     "json-loader": "^0.5.4",
     "node-sass": "^3.13.0",
-    "sass-loader": "^4.0.2",
-    "webpack": "^1.13.3"
+    "sass-loader": "^4.0.2"
   },
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack-dev-server": "NODE_ENV=development PORT=8080 --hot --inline --devtool inline-source-map --history-api-fallback"
+    "sass": "node-sass --output-style compressed -o public/assets/css src/sass",
+    "serve" : "browser-sync start server --files \"public/assets/css/*.css, public/assets/js/*.js, public/assets/fonts/*.js, **/*.html, !node_modules/**/*.html\" --port 3000",
+    "dev" : "npm start & npm run serve & run"
   },
   "author": "",
   "license": "ISC"
