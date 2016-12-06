@@ -30,7 +30,8 @@ module.exports = {
   devServer: {
     // This is required for webpack-dev-server. The path should
     // be an absolute path to your build destination.
-    outputPath: PATHS.build
+    outputPath: PATHS.build,
+    contentBase: PATHS.build
   },
   devtool: "sourceMap", //or inline source-map
   module: {

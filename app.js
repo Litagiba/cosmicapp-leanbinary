@@ -1,9 +1,11 @@
 var express = require('express')
+var sass = require('node-sass')
 var app = express()
 var hogan = require('hogan-express')
 app.engine('html', hogan)
 app.set('port', (process.env.PORT || 3000))
 app.use('/', express.static(__dirname + '/public/'))
+//app.use('/', express.static(__dirname + '/public/'))
 var Cosmic = require('cosmicjs')
 var bucket_slug = process.env.COSMIC_BUCKET || 'stellar'
 app.get('/', function(req, res) {

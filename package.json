@@ -20,7 +20,7 @@
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack-dev-server": "NODE_ENV=development PORT=8080 webpack-dev-server --content-base public/ --hot --inline --devtool inline-source-map --history-api-fallback"
+    "webpack-dev-server": "NODE_ENV=development PORT=8080 --hot --inline --devtool inline-source-map --history-api-fallback"
   },
   "author": "",
   "license": "ISC"
