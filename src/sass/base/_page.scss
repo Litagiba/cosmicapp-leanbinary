@@ -25,8 +25,10 @@
 
 	body {
 		background-color: _palette(bg);
+		background-image: url('https://cosmicjs.com/uploads/9d29dc80-bc0a-11e6-b199-3bb5765ee98b-background-img.jpg');
+
 		@include vendor('background-image', (
-			'url("images/overlay.png")',
+			'url("https://cosmicjs.com/uploads/9d29dc80-bc0a-11e6-b199-3bb5765ee98b-background-img.jpg") no-repeat',
 			'linear-gradient(45deg, #{_palette(bg1)} 15%, #{_palette(bg2) 85%})',
 		));
 
