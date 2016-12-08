@@ -10,10 +10,8 @@
 		@include color-typography($p:null);
 		position: absolute;
 		width: _size(outer);
-		max-width: calc(100% - #{_size(element-margin) * 2});
+		max-width: calc(80% - #{_size(element-margin) * 2});
 		padding: 1em;
-		border-top-left-radius: _size(border-radius-main);
-		border-top-right-radius: _size(border-radius-main);
 		cursor: default;
 		text-align: center;
 
@@ -43,16 +41,16 @@
 					@include glowbutton (_palette(accent));
 					display: inline-block;
 					height: 2.25em;
-					line-height: 2.25em;
-					padding: 0 1.25em;
+					line-height: 2em;
+					padding-top:0;
+					min-width:165px;
 
 					&:hover {
-						background-color: _palette((border-bg));
 					}
 
 					&.active {
-						background-color: _palette(invert, bg);
-						box-shadow: none;
+						background-color:_palette(accent);
+						color:_palette(bg);
 					}
 				}
 			}
@@ -61,16 +59,17 @@
 		&.alt {
 			position: fixed;
 			top: 0;
-			padding: 0.5em 1em;
-			width:100%;
-			background-color: transparentize(_palette(bg), 0.05);
-			border-top-left-radius: 0;
-			border-top-right-radius: 0;
+			width: 100%;
+			max-width: 100%;
+			padding: 1.5em 1em;
+			margin: 0 0 0 -50%;
+			left: 50%;
+			background-color: transparentize(_palette(bg), 0.3);
 			z-index: _misc(z-index-base);
 
 			ul {
 				li {
-					margin: 0 0.175em;
+					margin: 0 1em;
 
 					a {
 						font-size: 0.9em;

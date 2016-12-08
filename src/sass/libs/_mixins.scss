@@ -42,12 +42,19 @@
 @mixin glowbutton ($flavour)	{
     color: $flavour;
 		border-color:$flavour;
-    box-shadow: 0 0 24px 5px $flavour;
+    box-shadow: 0 0 20px 5px $flavour;
     text-align: center;
     -webkit-transition: 0.2s all;
     transition: 0.2s all;
-		border-width:3px solid $flavour;
-		border-radius: _size(border-radius-main);
+		border:4px solid $flavour;
+		border-radius: _size(border-radius);
+
+		&:hover,&:active{
+			background-color:$flavour;
+			color:_palette(bg);
+
+		}
+
 
 }
 
