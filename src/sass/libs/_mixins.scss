@@ -1,6 +1,23 @@
+
+/// Includes a series of color elements with the proper color values.
+/// @param {string} $p Color.
+@mixin color($p) {
+	@include color-typography($p);
+	@include color-box($p);
+	@include color-button($p);
+	@include color-form($p);
+	@include color-icon($p);
+	@include color-list($p);
+	@include color-section($p);
+	@include color-table($p);
+	@include color-spotlight($p);
+}
+
 /// Makes an element's :before pseudoelement a FontAwesome icon.
 /// @param {string} $content Optional content value to use.
 /// @param {string} $where Optional pseudoelement to target (before or after).
+
+
 @mixin icon($content: false, $where: before) {
 
 	text-decoration: none;
@@ -19,6 +36,18 @@
 		text-transform: none !important;
 
 	}
+
+}
+
+@mixin glowbutton ($flavour)	{
+    color: $flavour;
+		border-color:$flavour;
+    box-shadow: 0 0 24px 5px $flavour;
+    text-align: center;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+		border-width:3px solid $flavour;
+		border-radius: _size(border-radius-main);
 
 }
 

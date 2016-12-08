@@ -66,6 +66,8 @@
 		input[type="submit"],
 		input[type="reset"],
 		input[type="button"],
+
+
 		button,
 		.button {
 			background-color: transparent;
@@ -73,11 +75,11 @@
 			color: _palette($p, fg-bold) !important;
 
 			&:hover {
-				background-color: _palette($p, border-bg);
+				background-color: _palette($p, trans);
 			}
 
 			&:active {
-				background-color: _palette($p, border2-bg);
+				background-color: _palette($p, trans);
 			}
 
 			&.icon {

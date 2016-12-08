@@ -25,7 +25,8 @@
 
 	body {
 		background-color: _palette(bg);
-		background-image: url('https://cosmicjs.com/uploads/9d29dc80-bc0a-11e6-b199-3bb5765ee98b-background-img.jpg');
+		background: url('https://cosmicjs.com/uploads/9d29dc80-bc0a-11e6-b199-3bb5765ee98b-background-img.jpg') no-repeat center top;
+		background-size:contain;
 
 		@include vendor('background-image', (
 			'url("https://cosmicjs.com/uploads/9d29dc80-bc0a-11e6-b199-3bb5765ee98b-background-img.jpg") no-repeat',

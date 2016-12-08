@@ -7,7 +7,7 @@
 /* Main */
 
 	#main {
-		@include color(invert);
+		@include color($p: null);
 		border-radius: _size(border-radius-main);
 
 		> .main {
