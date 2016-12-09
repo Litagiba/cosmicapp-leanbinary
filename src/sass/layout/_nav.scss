@@ -8,11 +8,12 @@
 
 	#nav {
 		@include color-typography($p:null);
-		position: absolute;
+		position: relative;
 		width: _size(outer);
 		max-width: calc(80% - #{_size(element-margin) * 2});
 		padding: 1em;
 		cursor: default;
+		margin:0 auto;
 		text-align: center;
 
 		& + #main {

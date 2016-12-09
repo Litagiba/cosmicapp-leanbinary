@@ -15,8 +15,9 @@
 		}
 
 		p {
-			font-size: 1.25em;
+			font-size: 1.30em;
 			letter-spacing: _font(letter-spacing);
+			color: _palette(accent3);
 		}
 
 		&.alt {

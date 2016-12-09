@@ -74,6 +74,10 @@
 			color: _palette(accent5);
 		}
 
+		&.style6 {
+			color: $white;
+		}
+
 		@include breakpoint(xlarge) {
 			&.major {
 				&:before {
@@ -105,10 +109,10 @@
 	@mixin color-icon($p: null) {
 		.icon {
 			&.major {
-				border-color: _palette($p, border);
+				border-color: _palette($p, accent3);
 
 				&:before {
-					border-color: _palette($p, border);
+					border-color: _palette($p, bg1);
 				}
 			}
 

@@ -195,8 +195,16 @@
 			color: _palette($p, fg-bold);
 		}
 
-		h1, h2, h3, h4, h5, h6 {
+		h1{
+			color: _palette($p, accent3);
+		}
+
+		h2, h3{
 			color: _palette($p, fg-bold);
+		}
+
+		h4, h5, h6 {
+			color: _palette($p, fg-light);
 		}
 
 		blockquote {

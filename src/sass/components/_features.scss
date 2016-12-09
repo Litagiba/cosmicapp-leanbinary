@@ -15,6 +15,8 @@
 		padding: 0;
 		list-style: none;
 
+
+
 		li {
 			width: calc(#{(100% / 4)} - #{_size(element-margin)});
 			margin-left: _size(element-margin);
@@ -31,6 +33,12 @@
 			> :last-child {
 				margin-bottom: 0;
 			}
+
+
+		}
+
+		li:nth-child(even) p{
+			color:_palette(accent5);
 		}
 
 		@include breakpoint(medium) {

@@ -32,36 +32,43 @@ $black:	#000;
 $white: #fff;
 $grey: #dddddd;
 
+$neongreen: #00FF00;
+$turquoise: #9bb2e1;
+$pale: #F6FBF5;
+$purple:#8F13FD;
+$violet:#7E14DA;
+$leafygreen: #219D20;
+
 	$palette: (
 
 		bg:         $black,
-		fg:					rgba(255,255,255,0.65),
+		fg:					rgba($white,0.65),
 		fg-bold:		$white,
-		fg-light:		rgba(255,255,255,0.5),
-		border:			rgba(255,255,255,0.35),
+		fg-light:		rgba($turquoise,0.75),
+		border:			rgba($violet,0.50),
 		trans: 			transparent,
-		border-bg:	rgba(255,255,255,0.075),
-		border2:	  rgba(255,255,255,0.75),
-		border2-bg:	rgba(255,255,255,0.2),
+		border-bg:	rgba($white,0.075),
+		border2:	  rgba($white,0.75),
+		border2-bg:	rgba($white,0.2),
 
 		invert: (
 			bg:				$white,
 			bg-alt:			#f7f7f7,
-			fg:				#636363,
-			fg-bold:		#636363,
+			fg:				#9FBDA7,
+			fg-bold:		#9FBDA7,
 			fg-light:		rgba(99,99,99,0.25),
-			border:			$grey,
+			border:			rgba($grey,0.30),
 			border-bg:		rgba(222,222,222,0.25),
 			border2:		$grey,
 			border2-bg:		rgba(222,222,222,0.5),
 		),
 
-		accent:       #00FF00,//logo green
-		accent1:			#8F13FD,
+		accent:       $neongreen,//logo green
+		accent1:			$purple,
 		accent2:			#219D20,
-		accent3:			#9bb2e1,
-		accent4:			#F6FBF5,//very pale
-		accent5:			#7E14DA,
-		bg1:				  #005D19,//leafy green
+		accent3:			$turquoise,//turquoise
+		accent4:			$pale,//very pale
+		accent5:			$violet,
+		bg1:				  $leafygreen,//leafy green
 		bg2:				  #001204//very dark green
 	);
