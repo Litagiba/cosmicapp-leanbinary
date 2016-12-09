@@ -21,7 +21,6 @@
 		cursor: pointer;
 		display: inline-block;
 		font-weight: _font(weight);
-		height: 2.75em;
 		line-height: 2.75em;
 		min-width: 9.25em;
 		padding: 0 1.5em;
@@ -73,9 +72,13 @@
 			background-color: transparent;
 			box-shadow: inset 0 0 0 1px _palette($p, border);
 			color: _palette($p, fg-bold) !important;
+			line-height:44px;
 
 			&:hover {
-				background-color: _palette($p, trans);
+
+				@include glowbutton($violet);
+				background-color: _palette(accent5);
+				line-height: 36px;
 			}
 
 			&:active {

@@ -90,3 +90,12 @@
 	@return url("data:image/svg+xml;charset=utf8,#{$svg}");
 
 }
+
+//*Gradient//
+
+@mixin gradientbg($from,$to){
+	background-image: -moz-linear-gradient(to right, rgba($from, 1), rgba($to, 0)),
+	-webkit-gradient(to right, rgba($from, 1), rgba($to, 0)),
+	-ms-linear-gradient(to right, rgba($from, 1), rgba($to, 0)),
+	linear-gradient(to right, rgba($from, 1), rgba($to, 0));
+}
